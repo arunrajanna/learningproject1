@@ -5,7 +5,7 @@ resource "aws_instance" "amazon_linux" {
   subnet_id              = aws_subnet.learning_subnet.id
   //security_groups        = [aws_security_group.ec2_sg.name]
   security_groups        = [aws_security_group.ec2_sg.id]
-  private_ip             = "10.0.1.101"           # Specify the private IP within the subnet range
+  private_ip             = "10.0.1.102"           # Specify the private IP within the subnet range
 associate_public_ip_address = true
 tags = {
     Name = "Amazon_linux_learningvpc1"
