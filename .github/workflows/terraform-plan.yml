@@ -5,12 +5,20 @@ on:
    branches:
    - main
    paths:
+<<<<<<< HEAD
    - ./**
+=======
+   - */*
+>>>>>>> 41b0cb56497cbaf3295e39d0aeb648ee7a057d19
  pull_request:
    branches:
    - main
    paths:
+<<<<<<< HEAD
    - ./**
+=======
+   - */*
+>>>>>>> 41b0cb56497cbaf3295e39d0aeb648ee7a057d19
  
 env:
  # verbosity setting for Terraform logs
