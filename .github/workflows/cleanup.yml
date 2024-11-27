@@ -34,7 +34,7 @@ jobs:
         terraform_version: ${{ env.TF_VERSION }}
 
     - name: 'Terraform init'
-      run: terrafrom init
+      run: terraform init
 
     - name: 'Terraform destroy'
       run: terraform destroy
