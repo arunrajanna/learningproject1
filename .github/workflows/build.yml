@@ -32,6 +32,8 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: ${{ env.TF_VERSION }}
+    - name: 'Terraform init'
+      run: terraform init
 
     - name: 'Terraform Plan'
       run: terraform plan -out=tfplan
